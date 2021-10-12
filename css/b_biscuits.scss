@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import '../css/menu';
+@import '../css/footer';
+@import '../css/contact';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    animation: fade 1s ease-in;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page1 {
+    // Banner
+    .Banner {
+        animation: about 1s ease;
+        img {
+            width: 100%;
+        }
+    }
+    @keyframes about {
+        0% {
+            margin-top: 200px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+    .content {
+        padding-bottom: 0px;
+        .flow {
+            display: flex;
+            justify-content: start;
+            width: 80%;
+            margin: auto;
+            padding-top: 30px;
+            a {
+                text-decoration: none;
+                color: #C32824;
+            }
+            h1 {
+                font-size: 30px;
+                font-weight: 100;
+                color: #C32824;
+                span {
+                    color: black;
+                }
+            }
+        }
+        .heading {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0 100px 0;
+            h1 {
+                font-size: 50px;
+                font-weight: 400;
+            }
+        }
+        .see_btn {
+            display: none;
+        }
+        .card_section2 {
+            display: none;
+        }
+        .card_section {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            .card {
+                height: 400px;
+                width: 25%;
+                background-color: #f6f5f1;
+                border-radius: 30px;
+            }
+            .card2 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    #biscuits {
+                        height: 150px;
+                        width: 300px;
+                    }
+                    img {
+                        margin-top: -50px;
+                        height: 150px;
+                        width: 300px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .gap {
+                    padding-top: 30px;
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+        }
+        .show {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .page1 {
+        .content {
+            .flow {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            .heading {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+            .show {
+                display: none;
+            }
+            .see_btn {
+                display: none;
+            }
+            .card_section {
+                .card {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700.98px) {
+    .page1 {
+        .Banner {
+            animation: none;
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            .flow {
+                width: 90%;
+                h1 {
+                    font-size: 18px;
+                }
+            }
+            .heading {
+                h1 {
+                    font-size: 20px;
+                    padding-bottom: 0px;
+                }
+            }
+            .hide {
+                display: none;
+            }
+            .show {
+                display: flex;
+            }
+            .space {
+                padding-top: 50px;
+            }
+            .card_section {
+                display: none;
+            }
+            .card_section2 {
+                display: flex;
+                justify-content: space-evenly;
+                .card {
+                    height: 200px;
+                    width: 150px;
+                    border-radius: 20px;
+                    img {
+                        margin: auto;
+                        display: block;
+                        height: 200px;
+                        justify-content: center;
+                    }
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 0px 0 0px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    padding-top: 15px;
+                    background-color: #C32824;
+                    height: 48px;
+                    width: 150px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700.98px) and (max-width: 991.98px) {
+    .page1 {
+        .Banner {
+            animation: none;
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            .flow {
+                width: 90%;
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            .heading {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            .show {
+                display: flex;
+            }
+            .hide {
+                display: none;
+            }
+            .space {
+                padding-top: 50px;
+            }
+            .card_section {
+                .card {
+                    height: 300px;
+                    width: 200px;
+                    border-radius: 20px;
+                    img {
+                        margin: auto;
+                        display: block;
+                        height: 300px;
+                        justify-content: center;
+                    }
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 80px 0 0px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 25px;
+                    text-decoration: none;
+                    padding-top: 20px;
+                    background-color: #C32824;
+                    height: 68px;
+                    width: 250px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}

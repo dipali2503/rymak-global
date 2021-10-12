@@ -1,0 +1,1606 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import '../css/menu';
+@import '../css/footer';
+@import '../css/contact';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+// loader
+.preloader {
+    width: 100%;
+    height: 100%;
+    background-color: #3e3c41;
+    z-index: 10;
+    position: absolute;
+}
+
+.circle {
+    border-radius: 190px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.circle1 {
+    background-color: #7752d5;
+    width: 240px;
+    height: 240px;
+    margin-top: -120px;
+    margin-left: -120px;
+}
+
+.circle2 {
+    background-color: #8362d9;
+    width: 170px;
+    height: 170px;
+    margin-top: -85px;
+    margin-left: -85px;
+}
+
+.circle3 {
+    background-color: #9f88d6;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+// Loader
+.page1 {
+    height: 100%;
+    width: 100%;
+    // Banner
+    .Banner {
+        img {
+            width: 100%;
+            height: 560px;
+        }
+    }
+    // Our Brands
+    .our_brands {
+        .heading {
+            display: flex;
+            justify-content: center;
+            padding: 100px 0 150px 0;
+            h1 {
+                font-size: 60px;
+                font-weight: 400;
+            }
+        }
+        .cards_sections_2 {
+            display: none;
+        }
+        .cards_sections {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            .card {
+                height: 400px;
+                width: 25%;
+                background-color: #f6f5f1;
+                border-radius: 30px;
+            }
+            .card1 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    #water {
+                        height: 250px;
+                        width: 230px;
+                    }
+                    img {
+                        margin-top: -130px;
+                        height: 250px;
+                        width: 250px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        font-weight: lighter;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card2 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    #spices {
+                        margin-top: -40px;
+                        height: 150px;
+                        width: 300px;
+                    }
+                    img {
+                        margin-top: -80px;
+                        height: 200px;
+                        width: 250px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        font-weight: lighter;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card3 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    #pulses {
+                        height: 250px;
+                        width: 300px;
+                    }
+                    img {
+                        margin-top: -140px;
+                        height: 250px;
+                        width: 250px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        font-weight: lighter;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+        }
+        .cards_sections_1 {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            padding-top: 150px;
+            .card {
+                height: 400px;
+                width: 25%;
+                background-color: #f6f5f1;
+                border-radius: 30px;
+            }
+            .card1 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -100px;
+                        height: 200px;
+                        width: 300px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card2 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    #biscuits {
+                        height: 150px;
+                        width: 300px;
+                    }
+                    img {
+                        margin-top: -50px;
+                        height: 150px;
+                        width: 300px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .gap {
+                    padding-top: 30px;
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card3 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -100px;
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+        }
+        .see_btn {
+            display: flex;
+            justify-content: center;
+            padding: 80px 0 80px 0;
+            text-align: center;
+            margin: auto;
+            a {
+                font-size: 25px;
+                text-decoration: none;
+                padding-top: 20px;
+                background-color: #C32824;
+                height: 68px;
+                width: 300px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 40px;
+            }
+        }
+    }
+    // About 
+    .about_mobile {
+        display: none;
+    }
+    .about_section {
+        background-color: #f6f5f1;
+        padding: 180px 0 180px 0;
+        .about {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            margin: auto;
+            .about_img {
+                img {
+                    height: 450px;
+                    width: 450px;
+                }
+            }
+            .about_content {
+                padding-left: 8%;
+                h1 {
+                    font-size: 60px;
+                    font-weight: 400;
+                }
+                p {
+                    padding-top: 50px;
+                    font-size: 30px;
+                    font-weight: 100;
+                }
+                .about_btn {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: start;
+                    text-align: center;
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        padding-top: 17px;
+                        height: 58px;
+                        background-color: #C32824;
+                        width: 200px;
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+    // Recipes
+    .recipes_mobile {
+        display: none;
+    }
+    .recipes {
+        .heading {
+            display: flex;
+            justify-content: center;
+            padding: 100px 0 200px 0;
+            h1 {
+                font-size: 60px;
+                font-weight: 400;
+            }
+        }
+        .cards_sections {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            .card {
+                height: 400px;
+                width: 25%;
+                background-color: #f6f5f1;
+                border-radius: 30px;
+            }
+            .card1 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .gap {
+                    padding-top: 20px;
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 65px 0 50px 0;
+                    }
+                }
+            }
+            .card2 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card3 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+        }
+        .see_btn {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 0px 0;
+            text-align: center;
+            margin: auto;
+            a {
+                font-size: 25px;
+                text-decoration: none;
+                padding-top: 20px;
+                background-color: #C32824;
+                height: 68px;
+                width: 230px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .page1 {
+        .about_section {
+            .about {
+                .about_img {
+                    img {
+                        height: 380px;
+                        width: 380px;
+                    }
+                }
+                .about_content {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550.98px) {
+    .page1 {
+        .Banner {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // Brands
+        .our_brands {
+            .heading {
+                padding: 30px 0 150px 0;
+                h1 {
+                    font-size: 28px;
+                }
+            }
+            .cards_sections_1 {
+                display: none;
+            }
+            .cards_sections {
+                display: none;
+            }
+            .space {
+                padding-top: 120px;
+            }
+            .cards_sections_2 {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                margin-top: -50px;
+                .card {
+                    height: 250px;
+                    width: 45%;
+                    background-color: #f6f5f1;
+                    border-radius: 30px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        #pulses1 {
+                            margin-top: -80px;
+                            height: 120px;
+                            width: 120px;
+                        }
+                        img {
+                            margin-top: -70px;
+                            height: 120px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+                    }
+                    .gap {
+                        padding-top: 45px;
+                    }
+                    .gap1 {
+                        padding-top: 15px;
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        #spices1 {
+                            height: 80px;
+                            width: 150px;
+                        }
+                        #rice {
+                            height: 70px;
+                            width: 110px;
+                        }
+                        img {
+                            margin-top: -30px;
+                            height: 80px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 40px 0 50px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding-top: 10px;
+                    background-color: #C32824;
+                    height: 38px;
+                    width: 180px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+        // About 
+        .about_section {
+            display: none;
+        }
+        .about_mobile {
+            display: grid;
+            background-color: #f6f5f1;
+            padding: 50px 0 50px 0;
+            .about {
+                width: 80%;
+                margin: auto;
+                h1 {
+                    font-size: 28px;
+                    text-align: center;
+                    font-weight: 400;
+                    padding-bottom: 30px;
+                }
+                .about_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+                .about_content {
+                    text-align: center;
+                    p {
+                        padding-top: 50px;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                    .about_btn {
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        a {
+                            font-size: 16px;
+                            text-decoration: none;
+                            padding-top: 10px;
+                            height: 38px;
+                            background-color: #C32824;
+                            width: 150px;
+                            color: white;
+                            font-family: Arial, Helvetica, sans-serif;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        // Recipes
+        .recipes {
+            display: none;
+        }
+        .recipes_mobile {
+            display: grid;
+            .heading {
+                h1 {
+                    padding-top: 10px;
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+            }
+            .cards_sections_2 {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                margin-top: 80px;
+                .card {
+                    height: 250px;
+                    width: 45%;
+                    background-color: #f6f5f1;
+                    border-radius: 30px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 30px 0 50px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding-top: 10px;
+                    background-color: #C32824;
+                    height: 38px;
+                    width: 120px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 551px) and (max-width: 991.98px) {
+    .page1 {
+        .Banner {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // Brands
+        .our_brands {
+            .heading {
+                padding: 30px 0 150px 0;
+                h1 {
+                    font-size: 32px;
+                }
+            }
+            .cards_sections_1 {
+                display: none;
+            }
+            .cards_sections {
+                display: none;
+            }
+            .space {
+                padding-top: 120px;
+            }
+            .cards_sections_2 {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                margin-top: -50px;
+                .card {
+                    height: 250px;
+                    width: 45%;
+                    background-color: #f6f5f1;
+                    border-radius: 30px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        #pulses1 {
+                            margin-top: -80px;
+                            height: 120px;
+                            width: 120px;
+                        }
+                        img {
+                            margin-top: -70px;
+                            height: 120px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 14px;
+                            font-weight: 100;
+                        }
+                    }
+                    .gap {
+                        padding-top: 45px;
+                    }
+                    .gap1 {
+                        padding-top: 15px;
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        #spices1 {
+                            height: 80px;
+                            width: 150px;
+                        }
+                        #rice {
+                            height: 70px;
+                            width: 110px;
+                        }
+                        img {
+                            margin-top: -30px;
+                            height: 80px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 14px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 40px 0 50px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding-top: 10px;
+                    background-color: #C32824;
+                    height: 38px;
+                    width: 180px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+        // About 
+        .about_section {
+            display: none;
+        }
+        .about_mobile {
+            display: grid;
+            background-color: #f6f5f1;
+            padding: 50px 0 50px 0;
+            .about {
+                width: 80%;
+                margin: auto;
+                h1 {
+                    font-size: 32px;
+                    text-align: center;
+                    font-weight: 400;
+                    padding-bottom: 30px;
+                }
+                .about_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+                .about_content {
+                    text-align: center;
+                    p {
+                        padding-top: 50px;
+                        font-size: 20px;
+                        font-weight: 100;
+                    }
+                    .about_btn {
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        a {
+                            font-size: 16px;
+                            text-decoration: none;
+                            padding-top: 10px;
+                            height: 38px;
+                            background-color: #C32824;
+                            width: 150px;
+                            color: white;
+                            font-family: Arial, Helvetica, sans-serif;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        // Recipes
+        .recipes {
+            display: none;
+        }
+        .recipes_mobile {
+            display: grid;
+            .heading {
+                h1 {
+                    padding-top: 10px;
+                    text-align: center;
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+            }
+            .cards_sections_2 {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                margin-top: 80px;
+                .card {
+                    height: 250px;
+                    width: 45%;
+                    background-color: #f6f5f1;
+                    border-radius: 30px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 14px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 80%;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            padding: 20px 0 10px 0;
+                        }
+                    }
+                }
+            }
+            .see_btn {
+                display: flex;
+                justify-content: center;
+                padding: 30px 0 50px 0;
+                text-align: center;
+                margin: auto;
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding-top: 10px;
+                    background-color: #C32824;
+                    height: 38px;
+                    width: 120px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+// Contact section
+.page1 {
+    .content_section {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .map {
+            iframe {
+                margin-top: 50px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 500px;
+                height: 500px;
+            }
+        }
+        .content {
+            padding-bottom: 100px;
+            padding-top: 50px;
+            width: 90%;
+            margin: auto;
+            .heading {
+                h1 {
+                    animation: about 1s ease;
+                    font-size: 50px;
+                    font-weight: 400;
+                }
+                @keyframes about {
+                    0% {
+                        margin-top: 200px;
+                    }
+                    100% {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .input_field {
+                padding-top: 30px;
+            }
+            .input_two {
+                input[type=text] {
+                    width: 40%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                }
+            }
+            input[type=text] {
+                font-family: 'Montserrat Alternates', sans-serif;
+                width: 80%;
+                font-size: 20px;
+                font-weight: 100;
+                color: black;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            .btn_submit {
+                padding-top: 80px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background-color: #C32824;
+                    padding: 20px 55px 20px 55px;
+                    font-size: 20px;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700.98px) {
+    .page1 {
+        .content_section {
+            display: flex;
+            flex-direction: column-reverse;
+            .map {
+                display: flex;
+                justify-content: center;
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 20px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    animation: none;
+                    text-align: center;
+                    h1 {
+                        padding-top: 30px;
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 12px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 80%;
+                    font-size: 12px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 10px 30px 10px 30px;
+                        font-size: 14px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700.98px) and (max-width: 991.98px) {
+    .page1 {
+        .content_section {
+            .map {
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    h1 {
+                        animation: none;
+                        font-size: 40px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 20px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 60%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 80px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 20px 45px 20px 45px;
+                        font-size: 20px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992.98px) and (max-width: 1199.98px) {
+    .page1 {
+        .content_section {
+            .map {
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 20px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 60%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 80px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 20px 45px 20px 45px;
+                        font-size: 20px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

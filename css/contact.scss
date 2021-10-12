@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import '../css/menu';
+@import '../css/footer';
+@import '../css/contact';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    animation: fade 0s ease-in;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page1 {
+    .content_section {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .map {
+            iframe {
+                margin-top: 50px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 500px;
+                height: 500px;
+            }
+        }
+        .content {
+            padding-bottom: 100px;
+            padding-top: 50px;
+            width: 90%;
+            margin: auto;
+            .heading {
+                h1 {
+                    animation: about 0s ease;
+                    font-size: 50px;
+                    font-weight: 400;
+                }
+                @keyframes about {
+                    0% {
+                        margin-top: 200px;
+                    }
+                    100% {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .input_field {
+                padding-top: 30px;
+            }
+            .input_two {
+                input[type=text] {
+                    width: 40%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                }
+            }
+            input[type=text] {
+                font-family: 'Montserrat Alternates', sans-serif;
+                width: 80%;
+                font-size: 20px;
+                font-weight: 100;
+                color: black;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            .btn_submit {
+                padding-top: 80px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background-color: #C32824;
+                    padding: 20px 55px 20px 55px;
+                    font-size: 20px;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700.98px) {
+    .page1 {
+        .content_section {
+            display: flex;
+            flex-direction: column-reverse;
+            .map {
+                display: flex;
+                justify-content: center;
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 20px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    animation: none;
+                    text-align: center;
+                    h1 {
+                        padding-top: 30px;
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 12px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 80%;
+                    font-size: 12px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 10px 30px 10px 30px;
+                        font-size: 14px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700.98px) and (max-width: 991.98px) {
+    .page1 {
+        .content_section {
+            .map {
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    h1 {
+                        animation: none;
+                        font-size: 40px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 20px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 60%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 80px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 20px 45px 20px 45px;
+                        font-size: 20px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992.98px) and (max-width: 1199.98px) {
+    .page1 {
+        .content_section {
+            .map {
+                iframe {
+                    margin-top: 50px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            .content {
+                padding-bottom: 100px;
+                padding-top: 100px;
+                width: 100%;
+                margin: auto;
+                .heading {
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 400;
+                    }
+                }
+                .input_field {
+                    padding-top: 30px;
+                }
+                .input_one {
+                    padding-left: 20px;
+                }
+                .input_two {
+                    margin: auto;
+                    padding-left: 20px;
+                    input[type=text] {
+                        width: 40%;
+                        font-size: 20px;
+                        font-weight: 100;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                    }
+                }
+                input[type=text] {
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    width: 60%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    color: black;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+                .btn_submit {
+                    padding-top: 80px;
+                    padding-left: 20px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #C32824;
+                        padding: 20px 45px 20px 45px;
+                        font-size: 20px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

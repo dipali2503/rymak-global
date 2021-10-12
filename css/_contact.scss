@@ -1,0 +1,168 @@
+.page1 {
+    // Contact
+    .contact_mobile {
+        display: none;
+    }
+    .contact_section {
+        padding-top: 100px;
+        hr {
+            height: 5px;
+            background-color: #f6f5f1;
+            border: #f6f5f1 solid 5px;
+            box-shadow: 10px 5px 5px #ebebeb;
+        }
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: auto;
+            padding: 80px 0 80px 0;
+            .contact_img {
+                flex: 1.5;
+                img {
+                    height: 180px;
+                    width: 460px;
+                }
+            }
+            .contact_add {
+                flex: 1;
+                h1 {
+                    font-size: 23px;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                }
+                p {
+                    width: 90%;
+                    font-size: 18px;
+                    font-weight: 100;
+                }
+            }
+            .teams {
+                flex: 1;
+                padding-left: 20px;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    // Contact
+    .contact_section {
+        hr {
+            height: 5px;
+            background-color: #f6f5f1;
+            border: #f6f5f1 solid 5px;
+            box-shadow: 10px 5px 5px #ebebeb;
+        }
+        .contact {
+            .contact_img {
+                flex: 2;
+                img {
+                    height: 200px;
+                    width: 400px;
+                }
+            }
+            .contact_add {
+                flex: 1;
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            .follow {
+                flex: 1;
+                h1 {
+                    font-size: 25px;
+                }
+                .social {
+                    img {
+                        padding: 0 0px 0 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .page1 {
+        // Contact
+        .contact_section {
+            display: none;
+        }
+        .contact_mobile {
+            display: grid;
+            hr {
+                height: 5px;
+                background-color: #f6f5f1;
+                border: #f6f5f1 solid 5px;
+                box-shadow: 10px 5px 5px #ebebeb;
+            }
+            .contact {
+                .contact_img {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+                    img {
+                        height: 100px;
+                        width: 280px;
+                    }
+                }
+                .contact_add {
+                    padding-top: 80px;
+                    padding-bottom: 50px;
+                    flex: 1;
+                    h1 {
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: lighter;
+                    }
+                }
+                .teams {
+                    padding-top: 20px;
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                    p {
+                        text-align: center;
+                        padding-top: 10px;
+                        font-size: 18px;
+                    }
+                }
+                .follow {
+                    h1 {
+                        font-size: 20px;
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                    .social {
+                        padding-top: 10px;
+                        width: 60%;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            padding: 0 10px 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

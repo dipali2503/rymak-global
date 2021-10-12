@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import '../css/menu';
+@import '../css/footer';
+@import '../css/contact';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    animation: fade 1s ease-in;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page1 {
+    // Recipes
+    .recipes_mobile {
+        display: none;
+    }
+    .recipes {
+        padding-bottom: 100px;
+        .heading {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 150px 0;
+            h1 {
+                animation: menu 1s ease-in;
+                font-size: 50px;
+                font-weight: 400;
+            }
+            @keyframes menu {
+                0% {
+                    font-size: 30px;
+                    margin-top: -50px;
+                    margin-left: 400px;
+                    color: red;
+                }
+                100% {
+                    font-size: 50px;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                }
+            }
+        }
+        .space {
+            padding-top: 200px;
+        }
+        .cards_sections {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            .card {
+                height: 400px;
+                width: 25%;
+                background-color: #f6f5f1;
+                border-radius: 30px;
+            }
+            .card1 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .gap {
+                    padding-top: 20px;
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 50px 0 50px 0;
+                    }
+                }
+            }
+            .card2 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 20px 0 50px 0;
+                    }
+                }
+            }
+            .card3 {
+                .card_img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin-top: -130px;
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+                .card_heading {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+                }
+                .card_des {
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        padding-top: 30px;
+                        text-align: center;
+                        width: 80%;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+                .explore {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: red;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 25px;
+                        padding: 20px 0 50px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700.98px) {
+    .page1 {
+        .recipes {
+            display: none;
+        }
+        .recipes_mobile {
+            display: inline;
+            .heading {
+                display: flex;
+                justify-content: center;
+                padding: 50px 0 80px 0;
+                h1 {
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+            }
+            .space {
+                padding-top: 80px;
+            }
+            .cards_sections {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                .card {
+                    height: 220px;
+                    width: 40%;
+                    background-color: #f6f5f1;
+                    border-radius: 15px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 90%;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            padding: 20px 0 20px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -50px;
+                            height: 100px;
+                            width: 100px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 90%;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                            padding: 20px 0 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700.98px) and (max-width: 991.98px) {
+    .page1 {
+        .recipes {
+            display: none;
+        }
+        .recipes_mobile {
+            display: inline;
+            .heading {
+                display: flex;
+                justify-content: center;
+                padding: 50px 0 150px 0;
+                h1 {
+                    font-size: 50px;
+                    font-weight: 400;
+                }
+            }
+            .space {
+                padding-top: 130px;
+            }
+            .cards_sections {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                .card {
+                    height: 280px;
+                    width: 40%;
+                    background-color: #f6f5f1;
+                    border-radius: 15px;
+                }
+                .card1 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -100px;
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 90%;
+                            font-size: 18px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            padding: 30px 0 30px 0;
+                        }
+                    }
+                }
+                .card2 {
+                    .card_img {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: -100px;
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
+                    .card_heading {
+                        display: flex;
+                        justify-content: center;
+                        h1 {
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                    }
+                    .card_des {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            padding-top: 30px;
+                            text-align: center;
+                            width: 90%;
+                            font-size: 18px;
+                            font-weight: 100;
+                        }
+                    }
+                    .explore {
+                        display: flex;
+                        justify-content: center;
+                        a {
+                            color: red;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            padding: 30px 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
